@@ -1,0 +1,15 @@
+IP：localhost
+帳號：root
+密碼：123456
+資料庫名稱：Database
+
+資料表：borrow:	ID
+		Name
+		Phone
+	equip:	EID
+		EName
+		ENum
+	
+	status:	BorID
+		EquipID
+		BorNum

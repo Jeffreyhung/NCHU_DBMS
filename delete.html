@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta charset="utf-8">
+		<title>刪除資料</title> 		
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" language="javascript"></script>			
+	</head> 
+	
+	<body>
+	<center>
+		<div data-role="page" id="stud">
+			<div data-role="header"  style="background-color:#77b3d4; color:#FFFFFF; text-shadow: 0 1px 1px #000000;">
+				<h1>刪除學生資料</h1>
+				<a href="home.html" rel="external">回首頁</a>
+			</div>
+			<div data-role="content" style="margin:0px 0px 0px 0px; padding:10px 2% 400px 2%; width:96%; height:900px;">
+				<form id= " form1 " name= " form1 " method= "post" action= "delStud.php" >
+					學生學號<input type="text"  size="10" name="ID" id="textfield" />
+					<input type="submit" name="button" id="button" value="刪除" />
+				</form>
+				<br><br>
+				<img src="Photo/mixer.jpg" width= 100% />	
+			</div>
+		</div>
+		
+		<div data-role="page" id="equip">
+			<div data-role="header"  style="background-color:#77b3d4; color:#FFFFFF; text-shadow: 0 1px 1px #000000;">
+				<h1>刪除器材資料</h1>
+				<a href="home.html" rel="external">回首頁</a>
+			</div>
+			<div data-role="content" style="margin:0px 0px 0px 0px; padding:10px 2% 400px 2%; width:96%; height:900px;">
+				<form id= " form1 " name= " form1 " method= "post" action= "delEquip.php" >
+					器材編號<input type="text"  size="10" name="EID" id="textfield" />
+					<input type="submit" name="button" id="button" value="刪除" />
+				</form>
+				<br><br>
+				<img src="Photo/mixer.jpg" width= 100% />	
+			</div>
+		</div>
+		
+		<div data-role="page" id="return">
+			<div data-role="header"  style="background-color:#77b3d4; color:#FFFFFF; text-shadow: 0 1px 1px #000000;">
+				<h1>器材歸還</h1>
+				<a href="home.html" rel="external">回首頁</a>
+			</div>
+			<div data-role="content" style="margin:0px 0px 0px 0px; padding:10px 2% 400px 2%; width:96%; height:900px;">
+				<form id= " form1 " name= " form1 " method= "post" action= "return.php" >
+					學生學號<input type="text"  size="10" name="BorID" id="textfield" />
+					器材編號<input type="text"  size="10" name="EquipID" id="textfield" />
+					<input type="submit" name="button" id="button" value="歸還" />
+				</form>
+				<br><br>
+				<img src="Photo/mixer.jpg" width= 100% />	
+			</div>
+		</div>
+	</center>
+	</body>
+</html>
